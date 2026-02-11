@@ -1,0 +1,104 @@
+task 1
+analyze the problem "student result management system"
+
+---------1.input -------------
+
+student name
+student id
+student  marks
+student subject 
+student maximum marks
+-----------2.processing-------- 
+calculating the marks
+analysing the marks with others
+filtering 
+assigning grads
+----------3.output---------
+student names and id
+student marks
+total marks
+results(pass or fail)
+
+
+
+
+--------------2 algorithm---------------
+1.start
+---------
+2.reading student names and id
+---------
+3.calculating the marks
+---------
+4.read number of subjects
+---------
+5.set total=0
+---------
+6.Repeat until i <= n
+Read marks
+Add marks to total
+Increment I
+---------
+7.compute average avg=total/n
+---------
+8.if any marks <40 ---pass
+      else ---fail
+---------
+9.assigning the grade:
+  avg >85 -----A
+  avg >70-----B
+  avg>50-----c
+  else----pass class
+---------
+10.display results
+---------
+11.stop
+
+
+-----------------flow chat------------------
+
+
+               START
+                 ↓
+           Input Name, Roll No
+                 ↓
+           Input n (subjects)
+                 ↓
+           total = 0 , i = 1
+                 ↓
+     [Loop i ≤ n ?] ──No──→ Compute Average
+                     │
+                    Yes
+                     ↓
+                Input marks
+                     ↓
+             total = total + marks
+                     ↓
+                i = i + 1
+                     ↓
+              (back to loop)
+  
+              After loop:
+                    ↓
+            average = total / n
+                    ↓
+             Check pass/fail
+                    ↓
+               Assign grade
+                    ↓
+              Display Result
+                    ↓
+                   END
+
+--------------4. Test Cases------------------
+
+Test Case	Input Marks	Expected Output
+
+Case 1	         90, 85, 88            A
+Case 2	        70, 65, 60	                               B
+Case 3	        50, 45, 55	                         c
+Case 4	        39, 80, 70             Fail
+Case 5	         0, 0, 0	             Fail
+Case 6	       100, 100, 100	     Distinction
+Case 7	      Negative marks	     Fail
+
+
